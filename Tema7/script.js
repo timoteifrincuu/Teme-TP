@@ -2,7 +2,24 @@ function setup() {
     createCanvas(400, 400);
 }
 
-
+function draw() {
+    background(0,0,0);
+    soare(200, 200, 10, 50);
+    orbita(200,200,100,60);
+    orbita(200,200,200,70);
+    orbita(200,200,300,80);
+    orbita(200,200,380,100);
+    fill(230,100,20);
+    planete(210,170,5);
+    fill(230,100,220);
+    planete(275,220,10);
+    fill(50,200,220);
+    planete(80,220,20);
+    fill(200,20,20);
+    planete(350,170,20);
+    fill(255,255,255);
+    text('The Solar System', 150, 80);
+}
 
 function orbita(x,y,d1, d2){
     stroke(255,255,255);
