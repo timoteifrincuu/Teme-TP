@@ -23,3 +23,17 @@ function setup() {
       a[i] = b;
     }
   }
+  
+  function draw() {
+    background(220);
+    boxes();
+  }
+  
+  function boxes() {
+    for (i = 0; i < 7; i++) {
+      for (j = 0; j < 4; j++) {
+        a[i][j].afiseaza();
+      }
+    }
+  }
+  
