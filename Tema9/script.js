@@ -25,4 +25,18 @@ function setup(){
     board[x][y] = new pawn(x,y, i<8 ? color(255) : color(50));
   }
 }
-//dont forget to make commits after each important thing!
+
+function draw(){
+  background(255);
+  for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+      if((i+j) % 2 === 0) fill(255);
+      else fill(0);
+      rect(i*50, j*50, 50, 50);
+      if(board[i][j] != null){
+        fill(board[i][j].col);
+        ellipse(i * 50 + 25, j * 50 + 25, 40, 40 );
+      }
+    }
+  }
+}
