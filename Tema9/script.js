@@ -14,8 +14,15 @@ function setup(){
       board[i][j] = null;
     }
   }
+
+
+  for (let i = 0; i < 16; i++){
+    let x,y;
+    do{
+      x = floor(random(8));
+      y = floor(random(8));
+    } while (board[x][y] != null);
+    board[x][y] = new pawn(x,y, i<8 ? color(255) : color(50));
+  }
 }
-
-
-
 //dont forget to make commits after each important thing!
